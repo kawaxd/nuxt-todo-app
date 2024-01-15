@@ -6,6 +6,8 @@ import { useTaskStore } from "~/store/tasks/taskStore";
 const taskStore = useTaskStore();
 
 const {data: tasks} = await useAsyncData("tasks", async () => {
+  // usage of useAsyncData is more suitable for async data fetching
+  // and it's not required to use it here in a 100% client-side app
   return await taskStore.getAllTasks();
 });
 
