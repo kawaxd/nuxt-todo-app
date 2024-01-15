@@ -1,9 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>
-    <p>task creation goes here</p>
-  </div>
+    <TasksTaskForm />
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+definePageMeta({
+  layout: "task-layout",
+  keepalive: true,
+});
+</script>

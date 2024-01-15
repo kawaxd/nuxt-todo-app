@@ -1,5 +1,10 @@
 <template>
-  <p>task dashboard here</p>
+  <tasks-dashboard />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  layout: "task-layout",
+  keepalive: true,
+});
+</script>
