@@ -2,7 +2,6 @@
 import type { Task } from "~/types";
 
 import TaskCard from "~/components/tasks/task-card.vue";
-import Checkbox from "~/components/common/checkbox.vue";
 
 const mockTasks: Task[] = [
   {
@@ -34,11 +33,6 @@ const mockTasks: Task[] = [
 
 <template>
   <ul class="flex flex-col gap-2 max-w-[280px] mx-auto">
-    <template v-for="task in mockTasks" :key="task.id">
-      <div class="flex">
-        <checkbox />
-        <task-card :task="task" />
-      </div>
-    </template>
+        <task-card :task="task" v-for="task in mockTasks" :key="task.id" />
   </ul>
 </template>
