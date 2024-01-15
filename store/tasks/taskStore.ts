@@ -10,7 +10,7 @@ export const useTaskStore = defineStore('task', {
       this.tasks.push(task);
     },
 
-    getAllTasks(): Task[] {
+    async getAllTasks(): Promise<Task[]> {
       return this.tasks;
     },
 
