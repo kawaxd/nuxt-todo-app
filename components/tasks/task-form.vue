@@ -37,6 +37,10 @@
 <script setup lang="ts">
 import generateUUID from "~/utils/generateUUID";
 
+import { useTaskStore } from "~/store/tasks/taskStore";
+
+const taskStore = useTaskStore();
+
 import type { Task } from "~/types";
 
 const title = ref("");
@@ -52,6 +56,6 @@ const createTask = () => {
     updatedAt: new Date().toISOString(),
   };
 
-  console.log("Created Task:", newTask);
+  taskStore.createTask(newTask);
 };
 </script>
