@@ -1,17 +1,9 @@
 <template>
-  <div>
-    <header>
-      <h1>header</h1>
-    </header>
-
+  <common-top-navigation />
+  <div class="container mx-auto min-h-screen">
     <main>
       <slot />
     </main>
-
-    <footer>
-      <h1>footer</h1>
-    </footer>
+    <common-bottom-navigation />
   </div>
 </template>
-
-<script setup lang="ts"></script>
