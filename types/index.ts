@@ -13,3 +13,7 @@ export type NavigationRoute = {
   route: string;
   icon?: string;
 };
+
+export type ButtonType = "button" | "submit" | "reset" | undefined;
+
+export type FormVariant = "create" | "update";

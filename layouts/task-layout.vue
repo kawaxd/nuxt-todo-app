@@ -1,10 +1,7 @@
 <template>
   <common-top-navigation />
-  <div class="container mx-auto min-h-screen">
-    <main>
-      <slot />
-    </main>
-
-    <common-bottom-navigation />
-  </div>
+  <main class="responsive-layout">
+    <slot />
+  </main>
+  <common-bottom-navigation />
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <TasksTaskForm />
+  <LazyTasksTaskForm form-variant="create" />
 </template>
 
 <script setup lang="ts">

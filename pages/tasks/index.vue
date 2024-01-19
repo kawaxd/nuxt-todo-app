@@ -1,5 +1,5 @@
 <template>
-  <tasks-dashboard />
+  <lazy-tasks-dashboard />
 </template>
 
 <script setup lang="ts">

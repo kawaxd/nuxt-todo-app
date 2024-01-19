@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <p>test index page with default layout</p>
+  <CommonAppHero />
 </template>
 
 <style scoped></style>
